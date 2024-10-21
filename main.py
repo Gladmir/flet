@@ -4,7 +4,7 @@ import os
 
 
 # Configuração do Firebase
-"""firebaseConfig = {
+firebaseConfig = {
     'apiKey': "AIzaSyD_o1TaA7m4ZKRGLzvnyoaC0yCKK9CqTXM",
     'authDomain': "board-07.firebaseapp.com",
     'projectId': "board-07",
@@ -13,9 +13,9 @@ import os
     'messagingSenderId': "164500572156",
     'appId': "1:164500572156:web:e8d11936ab8db3d65c1479",
     'measurementId': "G-MLW62WTQFX"
-}"""
+}
 
-# Configuração do Firebase usando variáveis de ambiente
+"""# Configuração do Firebase usando variáveis de ambiente
 # Configuração do Firebase usando variáveis de ambiente
 firebaseConfig = {
     'apiKey': os.getenv('FIREBASE_API_KEY'),
@@ -26,7 +26,7 @@ firebaseConfig = {
     'messagingSenderId': os.getenv('FIREBASE_MESSAGING_SENDER_ID'),
     'appId': os.getenv('FIREBASE_APP_ID'),
     'measurementId': os.getenv('FIREBASE_MEASUREMENT_ID')
-}
+}"""
 
 # Inicializar o Firebase
 firebase = pyrebase.initialize_app(firebaseConfig)
